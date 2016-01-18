@@ -2,7 +2,7 @@ Greate
 ======
 
 Greate helps you in creating github repos on the go from your command line.
-All you have to do is write `greate` and it will create a repository with the name of your current directory.
+All you have to do is write :code:`greate` and it will create a repository with the name of your current directory.
 
 You can also customize your repository by using additional arguments
 
