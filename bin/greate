@@ -8,8 +8,9 @@ import argparse
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--ssh', help='Adds the ssh url for git remote (Optionial). Default protocol is https', action='store_true', default=False)
+    parser.add_argument('--ssh', help='Adds the ssh url for git remote. Default: https', action='store_true', default=False)
     parser.add_argument('-d', '--description', help='Description for github repo', default='')
+    parser.add_argument('-n', '--name', help='Name for the github repo. Default: Current directory name', default=None)
     parser.add_argument('-r', '--readme', help='Create README.md for github repo', default=False, action='store_true')
     parser.add_argument('-p', '--private', help='Private github repo', default=False, action='store_true')
 
@@ -18,7 +19,7 @@ if __name__ == '__main__':
     description = args.description
     create_readme() if args.readme else None
     
-    resp = create_repo(args.ssh, description, args.private)
+    resp = create_repo(args.ssh, description, args.name ,args.private)
     if resp == 201:
         print('Repository created successfully')
     else:

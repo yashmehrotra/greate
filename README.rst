@@ -18,14 +18,17 @@ Usage
 
 .. code-block:: ssh
 
-    usage: greate [-h] [--ssh] [-d DESCRIPTION] [-r]
+    usage: greate [-h] [--ssh] [-d DESCRIPTION] [-n NAME] [-r] [-p]
 
     optional arguments:
       -h, --help            show this help message and exit
-      --ssh                 Adds the ssh url for git remote. Default protocol is https
+      --ssh                 Adds the ssh url for git remote. Default: https
       -d DESCRIPTION, --description DESCRIPTION
                             Description for github repo
+      -n NAME, --name NAME  Name for the github repo. Default: Current directory name
       -r, --readme          Create README.md for github repo
+      -p, --private         Private github repo
+
 
 
 Examples
@@ -53,5 +56,4 @@ Examples
 TODO
 ----
 
-1. Option for choosing repo name
-2. Clean code
+1. Clean Code

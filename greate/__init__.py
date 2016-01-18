@@ -12,9 +12,12 @@ py2 = True if sys.version_info[0] == 2 else False
 def create_readme():
     pass
 
-def create_repo(remote_ssh, description, is_private):
-    dir_name = soldier.run('pwd').output
-    repo_name = dir_name.strip().split('/')[-1]
+def create_repo(remote_ssh, description, name, is_private):
+    if not name:
+        dir_name = soldier.run('pwd').output
+        repo_name = dir_name.strip().split('/')[-1]
+    else:
+        repo_name = name
 
     body = {
         'name': repo_name,
