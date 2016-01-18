@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
     name='greate',
-    version='0.1',
+    version='0.1.1',
     author='Yash Mehrotra',
     author_email='yashmehrotra95@gmail.com',
     packages=['greate'],
