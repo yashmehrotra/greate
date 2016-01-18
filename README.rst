@@ -22,7 +22,36 @@ Usage
 
     optional arguments:
       -h, --help            show this help message and exit
-      --ssh                 Adds the ssh url for git remote. Default protocal is https
+      --ssh                 Adds the ssh url for git remote. Default protocol is https
       -d DESCRIPTION, --description DESCRIPTION
                             Description for github repo
       -r, --readme          Create README.md for github repo
+
+
+Examples
+--------
+.. code-block:: sh
+
+    $ greate
+    Username: foobar
+    Password: 
+    Repository created successfully
+
+    # Use ssh as remote url
+    $ greate --ssh
+    Username: foobar
+    Password: 
+    Repository created successfully
+
+    # Add description
+    $ greate -d "My first project"
+    Username: foobar
+    Password: 
+    Repository created successfully
+
+
+TODO
+----
+
+1. Option for choosing repo name
+2. Clean code
