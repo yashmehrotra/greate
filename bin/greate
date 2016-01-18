@@ -9,9 +9,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--ssh', help='Adds the ssh url for git remote (Optionial). Default is https', action='store_true', default=False)
-    parser.add_argument('-d', '--description', help='Description for github repo (Optional)', default='')
-    parser.add_argument('-r', '--readme', help='Create README.md for github repo (Optional)', default=False, action='store_true')
-    parser.add_argument('-p', '--private', help='Private github repo (Optional)', default=False, action='store_true')
+    parser.add_argument('-d', '--description', help='Description for github repo', default='')
+    parser.add_argument('-r', '--readme', help='Create README.md for github repo', default=False, action='store_true')
+    parser.add_argument('-p', '--private', help='Private github repo', default=False, action='store_true')
 
     args = parser.parse_args()
 
