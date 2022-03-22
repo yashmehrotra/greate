@@ -15,7 +15,7 @@ setup(
     description='',
     long_description=open('README.rst').read(),
     install_requires=[
-        'requests==2.9.1',
+        'requests==2.20.0',
         'soldier==0.0.2',
     ],
 )
